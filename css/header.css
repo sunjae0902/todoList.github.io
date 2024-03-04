@@ -1,0 +1,23 @@
+
+
+#clock{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 60px;
+    color: white;
+    text-shadow: 3px 5px 6px rgb(236, 236, 239);
+   
+}
+#nickname{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    font-style: italic;
+    text-shadow: 3px 5px 10px rgb(7, 7, 7);
+}
+#weather{
+
+}

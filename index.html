@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="nickname"></h1>
+        <h1 id="clock"></h1>
+        <h1 id="weather"></h1>
+        
+    </div>
+    <div id="login-form" style="text-align: center;">
+        <form class="hidden">
+            <h1 id="greeting">Hello, Start with Your Nickname!</h1>
+            <input id="input"></input><button>start</button>
+        </form>
+    </div>
+    <div>
+        <form id="todo-form">
+            <input type='text' placeholder="👉🏻 Write a To-do Here and Press Enter.">
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="rectangle">
+          <ul id="todo-list">
+
+          </ul>
+        </div>
+    </div>
+   
+   
+</body>
+
+<script src="js/login.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js" type="module"></script>
+<script src="js/header.js"></script>
+<script src="js/button.js" type="module"></script>
+</html>

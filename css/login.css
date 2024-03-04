@@ -1,0 +1,10 @@
+#login-form{
+    text-align: center;
+    font-weight: 200;
+}
+.hidden{
+    display: none;
+}
+#greeting{
+    text-align: center;
+}
