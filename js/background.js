@@ -1,11 +1,11 @@
 const bgImages = [
-'../asset/image/1.jpg',
-'../asset/image/2.jpg',
-'../asset/image/3.jpg',
-'../asset/image/4.jpg',
-'../asset/image/5.jpg',
-'../asset/image/6.jpg',
-'../asset/image/7.jpg',
+'../../asset/image/1.jpg',
+'../../asset/image/2.jpg',
+'../../asset/image/3.jpg',
+'../../asset/image/4.jpg',
+'../../asset/image/5.jpg',
+'../../asset/image/6.jpg',
+'../../asset/image/7.jpg',
 ]
 
 changeBgImage();
