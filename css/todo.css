@@ -27,16 +27,30 @@ input::placeholder{
     background-position: left center; /* 아이콘 이미지 위치 설정 */
 }
 
+#todo-list li.done { /* class="done" */
+    background-image: url('../asset/image/done.png'); /* 완료된 항목에 대한 아이콘 이미지 */
+    /* 추가적인 완료된 항목에 대한 스타일링을 여기에 추가할 수 있습니다 */
+}
+
+
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin: 20px 250px; 
+}
+#todoRectangle{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: aliceblue; opacity: 0.7;
+    border-radius: 35px;
+    box-shadow:0px 5px 10px white;
    
 }
-#rectangle{
+#headerRectangle{
     position: relative;
-    margin-top: 20px;
-    width: 600px;
+    width: 300px;
     height: 400px;
     background-color: aliceblue; opacity: 0.7;
     border-radius: 35px;
