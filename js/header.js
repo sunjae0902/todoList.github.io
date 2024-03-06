@@ -1,7 +1,10 @@
-const header = document.querySelector("#header");
-const clock = header.querySelector("#clock");
-const weather = header.querySelector("#weather");
-const nickname = header.querySelector("#nickname");
+import { getPlaceData } from "./service/place_service.js";
+import { getWeatherData } from "./service/weather_service.js";
+
+const headerTop = document.querySelector("#header-top");
+const clock = headerTop.querySelector("#clock");
+const nickname = headerTop.querySelector("#nickname");
+
 
 const userName = localStorage.getItem("userName");
 
@@ -38,14 +41,17 @@ function timer(){
     
 }
 timer();
+getPlaceData().then(placeString =>{
+    const place = document.querySelector("#place");
+    place.innerHTML = placeString
+});
+getWeatherData().then(data =>{
+    const temp = document.querySelector('#temperature');
+    temp.innerHTML = parseInt(data.main.temp)+" °C";
+    const description = document.querySelector('#description');
+    description.innerHTML = data.weather[0]["description"];
+
+});
+
 setInterval(timer, 1000);
-
-// function onSuccess(position){
-//     console.log(position.coords.longitude)
-// }
-// function onError(){
-//     alert('[ERROR] Cannot find weather.');
-// }
-
-// navigator.geolocation.getCurrentPosition(onSuccess,onError);
 

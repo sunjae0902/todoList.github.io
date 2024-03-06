@@ -39,18 +39,10 @@ input::placeholder{
     align-items: center; 
     margin: 20px 250px; 
 }
+
 #todoRectangle{
     position: relative;
     width: 600px;
-    height: 400px;
-    background-color: aliceblue; opacity: 0.7;
-    border-radius: 35px;
-    box-shadow:0px 5px 10px white;
-   
-}
-#headerRectangle{
-    position: relative;
-    width: 300px;
     height: 400px;
     background-color: aliceblue; opacity: 0.7;
     border-radius: 35px;
